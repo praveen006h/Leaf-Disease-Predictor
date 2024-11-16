@@ -1,0 +1,39 @@
+<!-- form.html -->
+<html>
+  <head>
+    <title>Leaf Disease Prediction</title>
+    <style>
+      #choose_file{
+        position: relative;
+        top: 20px;
+        left: 10%
+      }
+      #file_div{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 5%;
+        width: 400px;
+        height: 400px;
+       background-image: linear-gradient(45deg, #959494, #000000);
+       color: aliceblue;
+      }
+      input[type=submit]{
+        border-radius: 10px;
+        width: 100px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Upload Your Image for DISEASE PREDICTION </h1>
+    <form id="image-form" action="{{ url_for('result') }}" method="POST" enctype="multipart/form-data">
+      <label for="img">Choose your Image: </label>
+      <input name="FN" type="text" placeholder="FileName">
+      <div id="file_div"><input type="file" name="in_img" value="Select..." id="choose_file"><br><br></div>
+
+      <input type="submit" value="Submit">
+    </form>
+    <img id="output-image" src="{{output_img}}">
+      </script>
+  </body>
+</html>

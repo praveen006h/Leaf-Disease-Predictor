@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device=width, initial-scale=1.0">
+    <title>Leaf disease detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/file.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,600;0,800;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/46d0b4be4d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section  class="header">
+    <nav> 
+            <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <!--<li><a href="course.html">ACADEMICS</a></li>-->
+                    <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+     </nav>
+
+<div class="text-box">
+    <h1>LEAF DISEASE DETECTION</H1>
+    <h4> TRAINED WITH 100+ DATA</h4>
+    <P>Protecting crops, securing food, and promoting sustainable agriculture through the power of advanced imaging and machine learning</P><br>
+    <a href="{{ url_for('upload') }}" class="hero-btn">Try now</a>
+</div>
+
+
+ </section>
+
+ <!-------------------------------------Course------------------------------------>
+
+ <section class="course">
+       <h1>Abstract</h1>
+       <p>
+            Agricultural productivity is something on which economy highly depends. This is the one of the reasons that disease detection in plants plays an important role in agriculture field, as having disease in plants are quite natural. If proper care is not taken in this area then it causes serious effects on plants and due to which respective product quality, quantity or productivity is affected. For instance a disease named little leaf disease is a hazardous disease found in pine trees in United States. Detection of plant disease through some automatic technique is beneficial as it reduces a large work of monitoring in big farms of crops, and at very early stage itself it detects the symptoms of diseases i.e. when they appear on plant leaves. This paper presents an algorithm for image segmentation technique which is used for automatic detection and classification of plant leaf diseases. It also covers survey on different diseases classification techniques that can be used for plant leaf disease detection. Image segmentation, which is an important aspect for disease detection in plant leaf disease, is done by using genetic algorithm.
+       </p>
+       
+       <div class="row">
+           <div class="course-col">
+               <h3>AIM</h3>
+               <p>
+                    To improve the accuracy and speed of leaf disease detection through the use of advanced imaging and machine learning techniques. By developing reliable and efficient methods for detecting and diagnosing diseases affecting crop leaves, we can help farmers protect their crops and improve food security.
+               </p>
+           </div>
+           <div class="course-col">
+                <h3>USED BY</h3>
+                <p>
+                     FARMERS<BR>
+                     RESEARCHERS<BR>
+                     CONSULTANTS<BR>
+                     COMPANIES
+                </p>
+            </div>
+            <div class="course-col">
+                    <h3>APPLICATIONS</h3>
+                    <p>
+                        Leaf disease detection applications can help protect crops from disease outbreaks, reducing the risk of crop loss and increasing yields.Early detection of leaf diseases can help farmers and researchers intervene before the disease spreads, saving time and resources.
+                    </p>
+                </div>
+       </div>
+ </section>
+
+<!---------------------------------campus----------------------------->
+
+ <section class="campus">
+      <h1>HOW IT WORKS?</h1>
+      <p>Leaf disease detection applications often use a combination of imaging and machine learning techniques to analyze images of crop leaves and identify signs of disease. The process typically involves the following steps:
+
+When a user uploads an image to a leaf disease detection application, the image is typically stored temporarily on the application's servers while the analysis is being performed. The user may be prompted to provide additional information about the crop or the location where the image was taken, which can help improve the accuracy of the analysis. Once the analysis is complete, the results are typically displayed to the user in a user-friendly interface that provides clear and actionable recommendations.
+        </p>
+
+        <div class="row">
+            
+                <div class="campus-col">
+                 
+                        <img src="{{url_for('static', filename='CSS/images/healthy.jpg')}}">
+                        <div class="layer">
+                            <h3>HEALTHY<BR>LEAF</h3>
+                        </div>
+                   </div>
+                   <div id="lateblight" class="campus-col">
+                 
+                       
+                        <div class="layer">
+                            <h3>LATE<BR>BLIGHT</h3>
+                        </div>
+                   </div>
+                   <div class="campus-col">
+                 
+                        <img src="{{url_for('static', filename='CSS/images/blackmold.jpg')}}">
+                        <div class="layer">
+                            <h3>BLACK<BR>MOLD</h3>
+                        </div>
+                   </div>
+        </div>
+
+
+ </section>
+
+ <!------------------------Facilities-------------------
+
+ <section class="facilities">
+        <h1> Our Facilities</h1>
+         <p>DPS is proud to own a team of teachers who are highly qualified . They are led by a strong leader.  Mrs.Amitha Devendiran who believes in Team work and aims for perfection in everything she undertakes.
+
+        </p>
+        <div class="row">
+             <div class="facilities-col">
+                  <img src="images/library.png">
+                  <h3>World Class Library</h3>
+                  <p>DPS has a spacious and a well stacked library with 15000 books which includes fiction and non-fiction books. Lots of reference books are also kept for the students to refer and get help.  Library is neatly divided into different sections which makes it easy for the students to access the required material.  Students are encouraged to do extensive reading and use the library as much as possible.  </p>
+            </div>
+            <div class="facilities-col">
+                  <img src="images/basketball.png">
+                  <h3>Play Ground</h3>
+                  <p>Sports not only teacher us how to lose but it also teaches us how not to be a loser.
+
+                        The domain of sports has the vast potential to better the game of life itself sports play as important role in instilling among our students – values that would hold them in good stead throughout their lives such as discipline, team spirit, hard work and sportsmanship etc.</p>  
+            </div>
+            <div class="facilities-col">
+                  <img src="images/cafeteria.png">
+                  <h3>Tasty and Healthy Food</h3>
+                  <p>DPS has the best quality snacks and food services for students and staffs.</p>
+            </div>
+
+
+        </div>
+ </section>
+
+ ------------------>
+
+ <!------------------testimonials--------------------------->
+
+ <section class="testimonials">
+     <h1>What Expert Says</h1>
+     <p>Experts reviews and experience</p>
+
+     <div class="row">
+         <div class="testimonial-col">
+             <img src="{{url_for('static', filename='CSS/images/user2.jpg')}}">
+             <div>
+                 <p>Best site ever to find leaf disease,great UI.</p>
+                 <h3>Karthik Mohan</h3>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="far fa-star"></i>
+
+             </div>
+         </div>
+
+         <div class="testimonial-col">
+                <img src="{{url_for('static', filename='CSS/images/user1.jpg')}}">
+                <div>
+                    <p>User interface is good,detection is fast and accurate.</p>
+                    <h3>Sherine George</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+
+
+                </div>
+            </div>
+     </div>
+ 
+ </section>
+
+ <!-------------------------call to action----------------------------->
+
+ <section class="cta">
+     <h1>Enroll For More Details
+     </h1>
+     <a href="{{ url_for('home') }}" class="hero-btn">CONTACT US</a>
+ </section>
+ 
+
+ <!-------------------------footer----------------------------->
+
+<section class="footer">
+    <p>All Rights Reserved. copyright&#169 2023</p>
+    <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+    </div>
+</section>
+
+
+ <!----------------------------Javascript for Toggle menu------------------->
+
+ <script>
+
+     var navLinks = document.getElementById("navLinks");
+
+     function showMenu(){
+         navLinks.style.right = "0";
+     }
+     function hideMenu(){
+         navLinks.style.right = "-200px";
+     }
+ </script>
+
+</body>
+</html>

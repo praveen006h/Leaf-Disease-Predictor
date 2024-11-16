@@ -1,0 +1,4 @@
+Excluded Files
+Excluded Files	 Exclusion Message ID	 Reason For Exclusion	 Exclusion Rule
+D:/ProgramFiles/Matlab/2024a/toolbox/fuzzy/fuzzy/+fuzzy/+internal/+codegen/readFISAsHomogenousStructure.m	MATLAB:depfun:req:ExcludedBy	The file or function is non-deployable and has been excluded from packaging. Either remove the file or function from your code, or use the MATLAB function "isdeployed" to ensure the function is not invoked in the deployed component. Then you can suppress this warning by using the %#exclude pragma.	
+D:/ProgramFiles/Matlab/2024a/toolbox/fuzzy/fuzzy/+fuzzy/+internal/+codegen/readType2FISAsHomogenousStructure.m	MATLAB:depfun:req:ExcludedBy	The file or function is non-deployable and has been excluded from packaging. Either remove the file or function from your code, or use the MATLAB function "isdeployed" to ensure the function is not invoked in the deployed component. Then you can suppress this warning by using the %#exclude pragma.	
